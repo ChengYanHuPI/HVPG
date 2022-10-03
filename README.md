@@ -14,12 +14,12 @@ pip install nibabel==3.2.1
 pip install tensorboard==2.5.0
 # private repository 
 pip install git+ssh://git@e.coding.net/xymedimg/passer-workers/medical-imaging-toolkit.git@v0.0.3#egg=mitk
-# Others can be installed by pip
+# Other tools can be installed via pip.
 ```
 
 ## Data
 
-##### prepare data
+##### Prepare data
 
 1. Annotate your data and convert to nifity format files (.nii/.nii.gz).
 
@@ -39,17 +39,17 @@ You can train better network models by modifying these preprocessing parameters:
 
 ## Run
 
-- Train
+#### Train
 
   run `train.py`
 
-  You need check and set the parameters: CUDA_VISIBLE_DEVICES, dir_checkpoint, input_path, label_path, batchsize, lr, model_type, channels, classes...
+  *You need check and set the parameters: CUDA_VISIBLE_DEVICES, dir_checkpoint, input_path, label_path, batchsize, lr, model_type, channels, classes...
 
-- Test
+#### Test
 
   run `predict.py`
 
-  You need to check and set the parameters: CUDA_VISIBLE_DEVICES, model_path, threshold, model_type, channels, classes, data_type, ornt, spacing, shape(according to your preprocess parameters), img_nii_dir, pred_dir...
+  *You need to check and set the parameters: CUDA_VISIBLE_DEVICES, model_path, threshold, model_type, channels, classes, data_type, ornt, spacing, shape(according to your preprocess parameters), img_nii_dir, pred_dir...
 
 ## Results
 
@@ -66,7 +66,7 @@ The following is one of my predicting results.
 
 python3.6.9. The used third-party libraries: vmtk, vtk, itk, scikit-image, nibabel, xlwt, xlrd, xlutils.
 
-Note: 
+*Note: 
 Nibabel is used to rewrite head information of nifti files.
 xlwt, xlrd, and xlutils are used to read, write, and copy excel files. 
 Itk, vtk read nifti files, reading and writing 3-D model files(*vtk); 
@@ -82,8 +82,8 @@ conda install -c vmtk vtk itk vmtk
 
 #### Use the source code
         
-Command "conda activate vmtk", to switch to the vmtk environment and enter the directory of the source code. 
-Command "python compute_vessel_params.py../../DemoData" and wait until completion.  Generated 3-D model files and the corresponding centerline files will be stored in the directory "ProcessedData". Parameters will be stored in the directory "Features".
+*Command "conda activate vmtk", to switch to the vmtk environment and enter the directory of the source code. 
+*Command "python compute_vessel_params.py../../DemoData" and wait until completion.  Generated 3-D model files and the corresponding centerline files will be stored in the directory "ProcessedData". Parameters will be stored in the directory "Features".
 
 ## Results
 
