@@ -1,4 +1,4 @@
-# Segmentation Network
+# Segmentation Network (2.5D)
 
 The model is based on UNet with modifications of the dimension with shape of h x w x 5.
 
@@ -12,7 +12,8 @@ Ubuntu 20.04.3, python 3.6, CUDA 11.0, anaconda (4.10.1),nibabel (3.2.1), Simple
 conda install pytorch==1.7.1 torchvision==0.8.2 torchaudio==0.7.2 -c pytorch
 pip install nibabel==3.2.1
 pip install tensorboard==2.5.0
-
+pip install simpleITK==5.2.0
+...
 ```
 
 ## Data
