@@ -12,9 +12,7 @@ Ubuntu 20.04.3, python 3.6, CUDA 11.0, anaconda (4.10.1),nibabel (3.2.1), Simple
 conda install pytorch==1.7.1 torchvision==0.8.2 torchaudio==0.7.2 -c pytorch
 pip install nibabel==3.2.1
 pip install tensorboard==2.5.0
-# private repository 
-pip install git+ssh://git@e.coding.net/xymedimg/passer-workers/medical-imaging-toolkit.git@v0.0.3#egg=mitk
-# Other tools can be installed via pip.
+
 ```
 
 ## Data
